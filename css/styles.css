@@ -23,7 +23,8 @@ ul,
 li,
 a,
 h1,
-h2 p {
+h2,
+p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -227,10 +228,25 @@ body {
 }
 
 .stock__price-old {
+    position: relative;
+    padding-right: 2px;
+    width: calc(50% - 26px);
     background: #ffffff;
 }
 
+.stock__price-old::after {
+    position: absolute;
+    right: -28px;
+    top: 0;
+    content: "";
+    border: 28px solid transparent;
+    border-top: 82px solid #fff;
+    display: block;
+}
+
 .stock__price-new {
+    padding-left: 53px;
+    width: calc(50% + 26px);
     color: #ffffff;
     background: linear-gradient(to top right, #436c23, #71a80e);
 }
@@ -252,7 +268,8 @@ body {
     font-family: GothamProBold, sans-serif;
 }
 
-.stock__button {
+.btn {
+    width: 100%;
     padding: 25px;
     font-size: 26px;
     border-radius: 5px;
@@ -261,7 +278,110 @@ body {
     font-family: GothamProBold, sans-serif;
     color: #ffffff;
     background: linear-gradient(#fd8e24, #d45828);
-
     border-radius: 6px;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5), inset 0px -6px #c04c1d;
+}
+
+.old {
+    padding-top: 30px;
+}
+
+.old__title {
+    text-align: center;
+    font-family: GothamProBold, sans-serif;
+    font-size: 32px;
+    line-height: 36px;
+    color: #c0401d;
+}
+
+.old__image {
+    margin-bottom: 24px;
+}
+
+.old__limitations {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.old__limitation {
+    position: relative;
+    max-width: 210px;
+}
+
+.old__limitation::after {
+    content: "";
+    position: absolute;
+    top: 128px;
+    right: calc(50% - 18px);
+    background: url(../images/cross.png) no-repeat center/cover;
+    width: 36px;
+    height: 36px;
+    display: block;
+}
+
+.old__limitaion-image {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.old__limitaion-description {
+    text-align: center;
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.best-decision {
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 58px 20px 72px;
+    margin-bottom: 20px;
+    background: url(../images/best-decision.png) no-repeat;
+}
+
+.best-decision__big-text {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 5px;
+    font-family: GothamProBold, sans-serif;
+}
+
+.best-decision__text {
+    font-size: 19px;
+}
+
+.choice {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choice__img {
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+    width: 338px;
+    height: 294px;
+    margin-bottom: 20px;
+}
+
+.gif {
+    position: absolute;
+    top: 111px;
+    font-size: 72px;
+    color: #ffffff;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.57);
+}
+
+.choice__text {
+    text-align: center;
+    max-width: 336px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.choice__text span {
+    color: #c0401d;
+    font-family: GothamProBold, sans-serif;
 }
