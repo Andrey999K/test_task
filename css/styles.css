@@ -1,0 +1,230 @@
+@font-face {
+    font-family: GothamPro;
+    src: url("../fonts/GOTHAPROREG.OTF");
+}
+
+@font-face {
+    font-family: GothamProBold;
+    src: url("../fonts/GOTHAPROBOL.OTF");
+}
+
+:root {
+    --gray1: #333333;
+    --gray2: #444444;
+}
+
+body,
+header,
+div,
+section,
+button,
+input,
+ul,
+li,
+a,
+h1,
+h2 p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    line-height: 1;
+}
+
+body {
+    color: var(--gray1);
+    font-family: GothamPro, sans-serif;
+}
+
+.header {
+    padding: 8px 20px;
+    background: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__advantages {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 370px;
+}
+
+.header__advantage {
+    display: flex;
+    align-items: center;
+}
+
+.header__advantage-text {
+    color: var(--gray2);
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.header__advantage-text span {
+    font-family: GothamProBold, sans-serif;
+}
+
+.header__advantage-icon {
+    width: 22px;
+    height: 28px;
+    margin-right: 17px;
+}
+
+.logo__icon {
+    width: 43px;
+    height: 43px;
+}
+
+.banner {
+    font-family: GothamProBold, sans-serif;
+    padding-top: 33px;
+    min-height: 571px;
+    background: url(../images/banner-background.jpg) no-repeat center;
+}
+
+.banner__title {
+    text-transform: uppercase;
+    font-size: 44px;
+    color: #d35728;
+}
+
+.banner__text {
+    font-size: 26px;
+    line-height: 32px;
+}
+
+.advantages {
+    padding: 20px 0;
+}
+
+.advantages__list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.advantages__list-item:last-child {
+    margin-bottom: 0;
+}
+
+.advantages__list-item-image {
+    margin-right: 15px;
+}
+
+.stock {
+    padding: 30px 0;
+    background: #f0f3ee;
+}
+
+.stock .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 440px;
+}
+
+.stock__quantity {
+    display: flex;
+    align-items: center;
+    max-width: 285px;
+    margin-bottom: 30px;
+}
+
+.stock__quantity-numeral {
+    font-size: 24px;
+    color: #fff;
+    line-height: 1;
+    padding: 6px 8px;
+    background: #e36c26;
+    border-radius: 12px;
+    margin-right: 11px;
+}
+
+.stock__quantity-numeral span {
+    font-family: GothamProBold, sans-serif;
+}
+
+.stock__quentity-text {
+    font-size: 18px;
+}
+
+.stock__time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.stock__time-text {
+    display: block;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.stock__time-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 315px;
+}
+
+.stock__time-item {
+    position: relative;
+    text-align: center;
+    padding: 15px;
+    border-radius: 9px;
+    width: 80px;
+    height: 80px;
+    background: #ffffff;
+}
+
+.stock__time-item:not(:last-child)::after {
+    position: absolute;
+    top: calc(50% - 18px);
+    right: -24px;
+    content: ':';
+    color: #787977;
+    font-size: 36px;
+}
+
+.stock__time-numeral {
+    font-family: GothamProBold, sans-serif;
+    font-size: 36px;
+    color: #426b23;
+}
+
+.stock__time-unit {
+    font-size: 12px;
+}
+
+.stock__price {
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.stock__price-block {
+    padding: 15px 30px;
+}
+
+.stock__price-old {
+    background: #ffffff;
+}
+
+.stock__price-new {
+    background: linear-gradient(to top right, #436c23, #71a80e);
+}
