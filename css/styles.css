@@ -32,6 +32,10 @@ h2 p {
     line-height: 1;
 }
 
+button {
+    cursor: pointer;
+}
+
 body {
     color: var(--gray1);
     font-family: GothamPro, sans-serif;
@@ -215,6 +219,7 @@ body {
     display: flex;
     border-radius: 5px;
     overflow: hidden;
+    margin-bottom: 21px;
 }
 
 .stock__price-block {
@@ -226,5 +231,37 @@ body {
 }
 
 .stock__price-new {
+    color: #ffffff;
     background: linear-gradient(to top right, #436c23, #71a80e);
+}
+
+.stock__price-text {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.stock__price-money {
+    font-size: 36px;
+}
+
+.stock__price-old .stock__price-money {
+    text-decoration: line-through;
+}
+
+.stock__price-new .stock__price-money {
+    font-family: GothamProBold, sans-serif;
+}
+
+.stock__button {
+    padding: 25px;
+    font-size: 26px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    font-family: GothamProBold, sans-serif;
+    color: #ffffff;
+    background: linear-gradient(#fd8e24, #d45828);
+
+    border-radius: 6px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
