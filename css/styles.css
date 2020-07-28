@@ -433,4 +433,35 @@ body {
         display: none;
     }
 
+    .best-decision__big-text {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .best-decision__text {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 410px) {
+    .best-decision__big-text {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .best-decision__text {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 370px) {
+    .best-decision__big-text {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+    .best-decision__text {
+        font-size: 11px;
+    }
 }
