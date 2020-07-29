@@ -57,8 +57,8 @@ body {
 .header .container {
     display: flex;
     justify-content: space-between;
-    max-width: 496px;
-    padding-left: 37px;
+    max-width: 480px;
+    padding: 0 12px 0 29px;
 }
 
 .header__advantages {
@@ -93,6 +93,7 @@ body {
 }
 
 .header__logo {
+    display: block;
     width: 56px;
     height: 56px;
 }
@@ -312,6 +313,11 @@ body {
     background: linear-gradient(#fd8e24, #d45828);
     border-radius: 6px;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5), inset 0px -6px #c04c1d;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: linear-gradient(#ff9a3c, #d36b42);
 }
 
 .old {
@@ -423,6 +429,19 @@ body {
 
 @media (max-width: 470px) {
 
+    .header .container {
+        padding: 0 20px;
+    }
+
+    .header__advantages {
+        margin-right: 10px;
+        max-width: 313px;
+    }
+
+    .header__advantage-text {
+        font-size: 13px;
+    }
+
     .old__limitations {
         max-width: 400px;
         margin: 0 auto;
@@ -444,7 +463,30 @@ body {
 
 }
 
+@media (max-width: 430px) {
+    .stock__price-old {
+        padding-right: 19px;
+    }
+
+    .stock__price-new {
+        padding-left: 40px;
+    }
+}
+
 @media (max-width: 410px) {
+
+    .header__advantages {
+        max-width: 290px;
+    }
+
+    .header__advantage-text {
+        font-size: 13px;
+    }
+
+    .header__advantage-icon {
+        margin-right: 6px;
+    }
+
     .best-decision__big-text {
         font-size: 20px;
         line-height: 26px;
@@ -453,9 +495,39 @@ body {
     .best-decision__text {
         font-size: 13px;
     }
+
+    .stock__price-old {
+        padding: 12px 19px 12px 6px;
+    }
+
+    .stock__price-new {
+        padding: 12px 0 12px 40px;
+    }
+
+    .btn {
+        font-size: 23px;
+    }
+
 }
 
-@media (max-width: 370px) {
+@media (max-width: 380px) {
+
+    .header .container {
+        padding: 0 15px;
+    }
+
+    .header__advantages {
+        max-width: 280px;
+    }
+
+    .header__advantage-text {
+        font-size: 12px;
+    }
+
+    .banner__title {
+        font-size: 37px;
+    }
+
     .best-decision__big-text {
         font-size: 17px;
         line-height: 23px;
@@ -464,4 +536,24 @@ body {
     .best-decision__text {
         font-size: 11px;
     }
+
+    .stock__price-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .header__advantages {
+        max-width: 235px;
+    }
+
+    .header__advantage-text {
+        font-size: 10px;
+    }
+
+    .stock__price-new {
+        padding: 12px 0 12px 26px;
+    }
+
 }
